@@ -9,4 +9,4 @@ jobs:
 
     steps:
       - name: Download CVE file
-        run: URL="https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-2021.json.gz"; for run in {1..100}; do echo $run && curl --silent -O "$URL" && sleep 0.5 && gunzip -f "${URL##*/}"; done
+        run: URL="https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-2021.json.gz"; for run in {1..500}; do echo $run && curl --silent -O "$URL" && sleep 0.5 && gunzip -f "${URL##*/}"; done
