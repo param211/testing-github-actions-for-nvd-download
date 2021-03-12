@@ -9,4 +9,4 @@ jobs:
 
     steps:
       - name: Download CVE file
-        run: curl ifconfig.me
+        run: curl ifconfig.me/forwarded
