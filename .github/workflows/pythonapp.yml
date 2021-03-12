@@ -4,7 +4,7 @@ on: push
 
 jobs:
   download-cve:
-    name: Download CVE from NVD
+    name: Find IP
     runs-on: ubuntu-latest
 
     steps:
